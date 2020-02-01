@@ -131,8 +131,9 @@ class PhysEnv(object):
 
     def render(self):
         im = step_simulation(self.screen, self.space, self.draw_options)
-        plt.imshow(im)
-        plt.show()
+        # plt.imshow(im)
+        # plt.show()
+        return im
 
     def construct_obs(self, new_obs=None):
         # Adds a frame into the frame buffer and returns the concatenated observation
